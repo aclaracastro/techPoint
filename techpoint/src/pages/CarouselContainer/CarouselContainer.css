@@ -1,0 +1,19 @@
+h1, p {
+    font-family: Lato;
+  }
+  
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
+    margin: 100px auto;
+    box-sizing: border-box;
+  }
+  
+  .box_banner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  

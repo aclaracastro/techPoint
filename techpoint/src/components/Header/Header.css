@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 109.6px;
+    padding-bottom: 5px;
+    background: #4A90e2;
+  }
+  
+  .header-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 107.6px;
+    
+  }
+
+  .logo {
+    align-items: start;
+  }
+
+  span{
+    color: #000000;
+  }
+
+  .contacts {
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    right: 285px; /* Ajuste conforme necessário */
+    display: flex;
+    gap: 10px;
+  }
+  
+  .contacts a {
+    color: #2e2e2e;
+    text-decoration: none;
+  }
+
+  .numero{
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    display: flex;
+    gap: 10px;
+  }
+
+  .nav-item {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+  } 
+
+  .nav {
+    display: flex;
+    gap: 15px;
+    align-self: flex-end; /* Alinha o nav ao fim (parte de baixo) da header-top */
+    margin-left: auto; /* Empurra o nav para a direita */
+    margin-bottom: 10px; /* Ajuste o valor conforme necessário para posicionar mais para baixo */
+    
+}
+  
+  .nav-item.active {
+    color: #151f20;
+  }
+  
