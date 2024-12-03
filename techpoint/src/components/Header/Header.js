@@ -3,6 +3,7 @@ import "./Header.css";
 import logo from "../../assets/techpoint.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Header = () => {
   return (
@@ -40,11 +41,12 @@ const Header = () => {
             <span>(21) 9 9995-3526</span>
           </div>
        
+        <AccountCircleIcon className="circuloIcon"/>
 
-        <nav className="nav">
-          <a href="#cadastrar/entrar" className="nav-item active">
+        <nav className="nav">        
+          <a href="#cadastrar/entrar" className="nav-item"  >
             Cadastrar/Entrar
-          </a>
+          </a> 
           <a href="#produtos" className="nav-item">
             Produtos
           </a>

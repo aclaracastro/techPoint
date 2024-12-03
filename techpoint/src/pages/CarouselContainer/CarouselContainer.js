@@ -2,9 +2,8 @@ import React from "react";
 import "../CarouselContainer/CarouselContainer.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel as ResponsiveCarousel } from "react-responsive-carousel";
-import Imagem from "../../assets/camisa-de-time.jpg";
-import Imagem2 from "../../assets/camisa-de-time2.jpg";
-import Imagem3 from "../../assets/camisa-de-time3.jfif";
+import Imagem from "../../assets/dell.webp";
+import Imagem2 from "../../assets/samsung.png";
 
 const CarouselContainer = () => {
   return (
@@ -18,13 +17,10 @@ const CarouselContainer = () => {
         interval={5000}
       >
         <div>
-          <img src={Imagem} alt="Slide 1" />
+          <img src={Imagem} alt="dell" />
         </div>
         <div>
-          <img src={Imagem2} alt="Slide 2" />
-        </div>
-        <div>
-          <img src={Imagem3} alt="Slide 3" />
+          <img src={Imagem2} alt="samsung" />
         </div>
       </ResponsiveCarousel>
     </div>

@@ -1,10 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
 .header {
     display: flex;
     flex-direction: column;
     align-items: end;
     height: 109.6px;
     padding-bottom: 5px;
-    background: #4A90e2;
+    background: #4a90e2;
   }
   
   .header-top {
@@ -18,7 +24,7 @@
   }
 
   .logo {
-    align-items: start;
+    align-items: left;
   }
 
   span{
@@ -28,9 +34,11 @@
   .contacts {
     position: absolute;
     top: 10px; /* Ajuste conforme necessário */
-    right: 285px; /* Ajuste conforme necessário */
+    right: 305px; /* Ajuste conforme necessário */
     display: flex;
     gap: 10px;
+    color: #000000;
+    font-size: 18px;
   }
   
   .contacts a {
@@ -44,13 +52,22 @@
     right: 10px; 
     display: flex;
     gap: 10px;
+    font-weight: 600;
+  }
+ 
+  .circuloIcon{
+    display: flex;
+    align-self: flex-end; /* Alinha o nav ao fim (parte de baixo) da header-top */
+    margin-left: 700px; /* Empurra o nav para a direita */
+    margin-bottom: 10px; /*alinha na direção da nav*/
+    margin-top: 5px;
   }
 
   .nav-item {
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
   } 
 
   .nav {
@@ -58,6 +75,7 @@
     gap: 15px;
     align-self: flex-end; /* Alinha o nav ao fim (parte de baixo) da header-top */
     margin-left: auto; /* Empurra o nav para a direita */
+    margin-right: 10px;
     margin-bottom: 10px; /* Ajuste o valor conforme necessário para posicionar mais para baixo */
     
 }

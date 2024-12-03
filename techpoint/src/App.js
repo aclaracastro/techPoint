@@ -8,7 +8,6 @@ import { Slider } from "@mui/material";
 import Form from './components/Form'
 import 'font-awesome/css/font-awesome.min.css';
 
-
 function App() {
   return (
     <>
