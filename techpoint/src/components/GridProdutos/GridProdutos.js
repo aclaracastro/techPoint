@@ -1,60 +1,43 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import produto0 from '../../assets/notebook.webp';
-import produto1 from '../../assets/ar-condicionado.webp';
-import produto2 from '../../assets/relogio.webp';
-import produto3 from '../../assets/telefone.png';
-import produto4 from '../../assets/fone.jpg';
-import produto5 from '../../assets/teclado.webp';
-import produto6 from '../../assets/mouse.jpg';
-import produto7 from '../../assets/monitor.jpg';
-
+import { Typography } from '@mui/material';
+import './GridProdutos.css';
+import Divider from '@mui/material/Divider';
 
 const GridProdutos = () => {
-    const [produto , setProduto] = useState([]);
-    useEffect(() => {
-        // fetch('./assets')
-        // .then(response => response.json())
-        // .then(response => {
-        //     setProduto(response.data)
+  const [produto, setProduto] = useState([]);
+
+  useEffect(() => {
+    fetch('https://fakestoreapi.com/products/category/electronics')
+      .then(response => response.json())
+      .then(response => {
+        setProduto(response); // sem o .data porque a API retorna diretamente os produtos
+      })
+      .catch(error => console.log('Erro ao buscar produtos', error));
+  }, []);
+
+  return (
+    <>
+      <Divider component="div" role="presentation" style={{marginTop:'15px'}}>
+        <Typography variant='h4' component='h2' gutterBottom id='produtos' style={{ alignItems: 'center' , marginTop: '30px', fontFamily: 'Montserrat, sans-serif'}} >Nossos Produtos</Typography> 
+      </Divider>
+
+      <Grid container spacing={2} justifyContent= 'center' >
+        {produto.map((produto) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} key={produto.id} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', marginBottom: '20px', marginLeft: '20px'}} >
+
+            <div style={{ width: '100%',  height: '250px', marginBottom: '10px',  overflow: 'hidden' }} >
+              <img src={produto.image} alt={produto.title} style={{ width: '250px', height: 'auto', marginLeft: '25px', borderRadius: '8px', objectFit: 'cover' }}/>
+            </div>
             
-        // })
-        // .catch(error => console.log('Erro ao buscar produtos',error))
-        setProduto([
-            { id: 1, imagem: produto0, nome: 'Notebook'},
-            { id: 2, imagem: produto1, nome: 'Ar Condicionado'},
-            { id: 3, imagem: produto2, nome: 'Relógio'},
-            { id: 4, imagem: produto3, nome: 'Telefone'},
-            { id: 5, imagem: produto4, nome: 'Fone'},
-            { id: 6, imagem: produto5, nome: 'Teclado'},
-            { id: 7, imagem: produto6, nome: 'Mouse'},
-            { id: 8, imagem: produto7, nome: 'Monitor'}
-        ])
-    }, []);
-
-    return(
-        <>
-        <Typography variant='h4' component='h1' gutterBottom id='produtos' style={{marginLeft:'20px', marginTop: '30px', textDecoration:'underline'}} >Nossos Produtos</Typography>
-        <Grid container spacing={2} justifyContent='center'>
-            {produto.map((produto, index) => (
-                
-                   <Grid sx={{
-                            display: 'flex',
-                            justifyContent: "center",
-                            alignItems: "center",
-                        }}>
-                        <div>
-                            <img src={produto.imagem} key={index} alt={`Produto${produto.nome}`} style={{ width: '250px', height: 'auto', marginLeft: '25px', borderRadius: '8px', objectFit: 'cover' }}/> {/*cover == imagem sem distorção*/}
-                        </div>
-                        {/* <Typography variant="body1" style={{ marginTop: '10px', fontWeight: 'bold' }} >{produto.nome}</Typography> */}
-                    </Grid>
-            ))}
-        </Grid>
-           
-        </>
-    );
-
-}
+            <h3 className='tituloProduto'>{produto.title}</h3>
+            <p className='preco'>R${produto.price.toFixed(2)}</p>
+            <p className='pix'>10% de desconto no PIX!</p>
+          </Grid>
+        ))}
+      </Grid>
+    </>
+  );
+};
 
 export default GridProdutos;

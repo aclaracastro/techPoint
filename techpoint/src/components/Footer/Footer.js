@@ -54,7 +54,7 @@ const Footer = () => {
         </Grid>
         <Box className="footer-text">
           <Typography variant="body2">
-            © 2024 Foguete Market. ® Todos os direitos reservados. 
+            © 2024 TechPoint. ® Todos os direitos reservados. 
           </Typography>
         </Box>
       </Container>

@@ -6,16 +6,21 @@ import CarouselContainer from "./pages/CarouselContainer/CarouselContainer";
 import GridProdutos from "./components/GridProdutos/GridProdutos";
 import { Slider } from "@mui/material";
 import Form from './components/Form'
+import Departamentos from './components/Departamentos/Departamentos'
 import 'font-awesome/css/font-awesome.min.css';
 
 function App() {
   return (
     <>
-      <Header />
-      <CarouselContainer />
-      <GridProdutos/>
-      <Form/>
-      <Footer />
+      <div className="background">
+        <Header />
+        <CarouselContainer />
+        <GridProdutos/>
+        <Departamentos/>
+        <Main/>
+        <Form/>
+        <Footer />
+      </div>
     </>
   );
 }

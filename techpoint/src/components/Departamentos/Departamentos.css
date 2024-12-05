@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #eedbc3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.titulo{
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #081524;
+    display: flex;
+    cursor: pointer;
+}
+
+.menu{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.departamentos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.categ{
+    width: 145px; /* Largura fixa */
+    height: 160px; /* Altura fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Espaço entre imagem e texto */
+    align-items: center;
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #f9f9f9; /* Fundo claro */
+    overflow: hidden;
+    text-align: center;
+    padding: 10px; /* Espaçamento interno */
+    cursor: pointer;
+}
+
+.categ:hover{
+    transform: scale(1.05);
+}
+
+.categ img {
+    width: 140px; /* A imagem ocupa toda a largura da div */
+    height: 90px; /* Ajusta a altura proporcionalmente */
+    max-height: 100px; /* Limita a altura da imagem */
+    object-fit: contain;
+}
+
+.subtitulo{
+    font-size: 16px;
+    font-weight: bold;
+    color: #4491e9;
+    margin-top: 5px;
+}

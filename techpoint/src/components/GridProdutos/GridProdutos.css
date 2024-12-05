@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.tituloProduto{ 
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.preco{ 
+  color: #4491e9;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pix{
+  color: rgb(33, 160, 44);
+  margin-top: 5px; 
+  font-weight: 500;
+}
