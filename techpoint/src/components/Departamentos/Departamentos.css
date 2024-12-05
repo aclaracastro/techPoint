@@ -39,17 +39,17 @@
 }
 
 .categ{
-    width: 145px; /* Largura fixa */
-    height: 160px; /* Altura fixa */
+    width: 145px; 
+    height: 160px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Espaço entre imagem e texto */
+    justify-content: center; 
     align-items: center;
-    border-radius: 8px; /* Bordas arredondadas */
-    background-color: #f9f9f9; /* Fundo claro */
+    border-radius: 8px; 
+    background-color: #f9f9f9;
     overflow: hidden;
     text-align: center;
-    padding: 10px; /* Espaçamento interno */
+    padding: 10px; 
     cursor: pointer;
 }
 
@@ -58,9 +58,9 @@
 }
 
 .categ img {
-    width: 140px; /* A imagem ocupa toda a largura da div */
-    height: 90px; /* Ajusta a altura proporcionalmente */
-    max-height: 100px; /* Limita a altura da imagem */
+    width: 140px; 
+    height: 90px; 
+    max-height: 100px; 
     object-fit: contain;
 }
 

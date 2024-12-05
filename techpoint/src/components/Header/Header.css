@@ -33,8 +33,8 @@
 
   .contacts {
     position: absolute;
-    top: 10px; /* Ajuste conforme necessário */
-    right: 305px; /* Ajuste conforme necessário */
+    top: 10px; 
+    right: 305px; 
     display: flex;
     gap: 10px;
     color: #000000;
@@ -57,8 +57,8 @@
  
   .circuloIcon{
     display: flex;
-    align-self: flex-end; /* Alinha o nav ao fim (parte de baixo) da header-top */
-    margin-left: 700px; /* Empurra o nav para a direita */
+    align-self: flex-end; 
+    margin-left: 700px; 
     margin-bottom: 10px; /*alinha na direção da nav*/
     margin-top: 5px;
   }
@@ -73,10 +73,10 @@
   .nav {
     display: flex;
     gap: 15px;
-    align-self: flex-end; /* Alinha o nav ao fim (parte de baixo) da header-top */
-    margin-left: auto; /* Empurra o nav para a direita */
+    align-self: flex-end; 
+    margin-left: auto; 
     margin-right: 10px;
-    margin-bottom: 10px; /* Ajuste o valor conforme necessário para posicionar mais para baixo */
+    margin-bottom: 10px; 
     
 }
   
