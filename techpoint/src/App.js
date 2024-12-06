@@ -8,6 +8,8 @@ import { Slider } from "@mui/material";
 import Form from './components/Form'
 import Departamentos from './components/Departamentos/Departamentos'
 import 'font-awesome/css/font-awesome.min.css';
+import MiniMapa from "./components/MiniMapa/MiniMapa";
+import Categorias from "./components/Categorias/Categorias";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <CarouselContainer />
         <GridProdutos/>
         <Departamentos/>
+        <Categorias/>
         <Main/>
+        <MiniMapa/>
         <Form/>
         <Footer />
       </div>

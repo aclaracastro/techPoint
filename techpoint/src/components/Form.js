@@ -8,21 +8,21 @@ function FormularioContato() {
   };
 
   return (
-
+  <>
     <Container maxWidth="lg">
-      <Divider sx={{ margin: '10px 0', borderColor: 'black' }} />
-      <Box mt={4}>
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
-            <Typography variant="h4" component="h1" gutterBottom id='contato'>
-              Formulário de Contato
+      <Divider sx={{ marginTop: '250px'}} />
+      <Box mt={4} >
+        <Grid container spacing={2}>
+          <Grid item xs={12} md={4} style={{marginLeft:'10px'}}>
+            <Typography variant="h4" component="h1" gutterBottom id='contato' sx={{textAlign:'center', marginBottom:'20px'}}>
+              Ficou com dúvidas?
             </Typography>
-            <Typography variant="body1" component="p">
-              Preencha os dados ao lado. Em breve um de nossos atendentes irá entrar em contato.
+            <Typography variant="body1" component="p" sx={{ textAlign: 'center' }}>
+              Preencha os dados ao lado. Em breve retornaremos com uma resposta!
             </Typography>
           </Grid>
-          <Grid item xs={12} md={8}>
-            <form onSubmit={handleSubmit}>
+          <Grid item xs={12} md={8} sx={{ display: 'flex', justifyContent: 'flex-start' }} >
+            <form onSubmit={handleSubmit} style={{ width: '100%', maxWidth: '400px', marginLeft:'40px' }}>
               <Grid container spacing={2}>
                 <Grid item xs={12} md={6}>
                   <TextField
@@ -35,20 +35,11 @@ function FormularioContato() {
                 </Grid>
                 <Grid item xs={12} md={6}>
                   <TextField
-                    label="Email"
+                    label="Número de Telefone"
                     variant="outlined"
                     fullWidth
                     margin="normal"
-                    type="email"
-                    required
-                  />
-                </Grid>
-                <Grid item xs={12}>
-                  <TextField
-                    label="Assunto"
-                    variant="outlined"
-                    fullWidth
-                    margin="normal"
+                    type="number"
                     required
                   />
                 </Grid>
@@ -74,6 +65,7 @@ function FormularioContato() {
         </Grid>
       </Box>
     </Container>
+  </>
   );
 }
 

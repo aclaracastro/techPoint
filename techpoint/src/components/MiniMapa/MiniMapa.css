@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+#titulo-mapa {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center; 
+    margin-top: 50px;
+}
+
+.localiza{
+    color: red;
+    margin-left: -5px;
+}
+
+.sub-mapa{
+    margin-left: 800px;
+    position: relative;
+    margin-top:-250px;
+}

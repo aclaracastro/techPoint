@@ -1,5 +1,5 @@
 import React from "react";
-import './Departamentos.css';
+import './Categorias.css';
 import MenuIcon from '@mui/icons-material/Menu';
 //imports das imagens
 import arCondicionado from '../../assets/ar-condicionado.webp';
@@ -11,7 +11,7 @@ import telefone from '../../assets/telefone.png';
 import teclado from '../../assets/teclado.webp';
 
 
-const Departamentos = () => {
+const Categoria = () => {
     const categorias = [
         { id: 1, Nome: 'Ar condicionado', imagem: arCondicionado },
         { id: 2, Nome: 'Headfone', imagem: fone },
@@ -42,4 +42,4 @@ const Departamentos = () => {
 }
 
 
-export default Departamentos;
+export default Categoria;

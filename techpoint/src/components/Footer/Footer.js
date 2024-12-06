@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Typography, Grid, Link } from '@mui/material';
+import { Box, Container, Typography, Grid, Link, Divider } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import './Footer.css';
@@ -19,6 +19,7 @@ const Footer = () => {
 
   return (
     <Box component="footer" className="footer">
+      <Divider sx={{ margin: '10px 0', borderColor: 'black' }} />
       <Container maxWidth="lg" className="footer-container">
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>

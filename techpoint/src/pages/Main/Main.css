@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+    margin-top: 30px;
+}
+  
+.titulo-faq {/* Título do FAQ */
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 24px;
+    color: #070707;
+    text-align: center;
+}
+  
+#panel1d-header, #panel2d-header, #panel3d-header,#panel4d-header, #panel5d-header, #panel6d-header{
+    background-color: #f3cbc7;
+}
+  /* Accordion */
+  .custom-accordion {
+    border: 1px solid #ddd;
+  }
+  
+  .custom-accordion-summary {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  
+  .custom-accordion-details {
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+  }
