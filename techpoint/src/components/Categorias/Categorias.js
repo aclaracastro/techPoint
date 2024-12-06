@@ -8,7 +8,7 @@ import relogio from '../../assets/relogio.webp';
 import notebook from '../../assets/notebook.webp';
 import monitor from '../../assets/monitor.jpg';
 import telefone from '../../assets/telefone.png';
-import teclado from '../../assets/teclado.webp';
+import mouse from '../../assets/mouse.jpg';
 
 
 const Categoria = () => {
@@ -19,7 +19,7 @@ const Categoria = () => {
         { id: 4, Nome: 'Notebook', imagem: notebook },
         { id: 5, Nome: 'Monitor', imagem: monitor },
         { id: 6, Nome: 'Telefone', imagem: telefone },
-        { id: 7, Nome: 'Teclado', imagem: teclado },
+        { id: 7, Nome: 'Mouse', imagem: mouse },
     ];
 
 
@@ -28,7 +28,7 @@ const Categoria = () => {
             <h2 className="titulo">
                 <MenuIcon className="menu"/> CATEGORIAS
             </h2>
-            <div className="categorias">
+            <div className="departamentos">
                 {categorias.map((categorias) => (
                     <div  key={categorias.id} className="categ">
                         <img src={categorias.imagem} alt={categorias.Nome} />

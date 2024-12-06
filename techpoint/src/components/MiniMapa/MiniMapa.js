@@ -8,9 +8,9 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const minimapStyle = {
     width: '500px',  
-    height: '400px', 
+    height: '300px', 
     marginTop: '60px',
-    marginLeft: '200px'
+    marginLeft: '100px'
 };
 
 const MiniMapa = () => {
@@ -24,8 +24,7 @@ const MiniMapa = () => {
             center={[-22.90920740180559, -43.18157146971745]} //centro do mapa
             zoom={17} //zoom no mapa
             scrollWheelZoom={true} //zoom com o scroll do mouse
-        >
-            
+        > 
             <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" //camada base do mapa
             />
@@ -40,7 +39,7 @@ const MiniMapa = () => {
                 <Typography style={{ fontSize: '16px' , fontFamily: 'Montserrat, sans-serif', marginTop:'10px'}}>
                     Venha nos visitar para mais informações sobre nossos produtos!
                 </Typography>
-            </div>
+        </div>
       </>
     );
 };

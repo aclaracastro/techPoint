@@ -19,7 +19,7 @@ const GridProdutos = () => {
   return (
     <>
       <Divider component="div" role="presentation" style={{marginTop:'15px'}}>
-        <Typography variant='h4' component='h2' gutterBottom id='produtos' style={{ alignItems: 'center' , marginTop: '30px', fontFamily: 'Montserrat, sans-serif'}} >Nossos Produtos</Typography> 
+        <Typography variant='h4' component='h2' gutterBottom id='produtos' style={{ alignItems: 'center' , marginTop: '30px', fontFamily: 'Montserrat, sans-serif', fontWeight:'500'}} >Nossos Produtos</Typography> 
       </Divider>
 
       <Grid container spacing={2} justifyContent= 'center' >

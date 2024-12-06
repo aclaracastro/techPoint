@@ -51,7 +51,7 @@ const Header = () => {
             Produtos
           </a>
           <a href="#portfolio" className="nav-item">
-            Portfólio
+            Localização
           </a>
           <a href="#contato" className="nav-item">
             Contato

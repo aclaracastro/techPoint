@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Montserrat", sans-serif;
 }
 
-.container{
+.container {
     margin: 20px;
     padding: 10px;
     text-align: center;
@@ -13,7 +13,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.titulo{
+.titulo {
     margin-top: 10px;
     font-size: 24px;
     font-weight: 600;
@@ -23,14 +23,14 @@
     cursor: pointer;
 }
 
-.menu{
+.menu {
     margin-left: 10px;
     font-size: 20px;
     cursor: pointer;
     margin-top: 3px;
 }
 
-.departamentos{
+.departamentos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -38,34 +38,43 @@
     margin-bottom: 20px;
 }
 
-.categ{
+/* Ajuste na grid */
+.departamentos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(145px, 165px)); 
+    gap: 15px; 
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.categ {
     width: 145px; 
     height: 160px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    border-radius: 8px; 
+    border-radius: 8px;
     background-color: #f9f9f9;
     overflow: hidden;
     text-align: center;
-    padding: 10px; 
+    padding: 10px;
     cursor: pointer;
 }
 
-.categ:hover{
-    transform: scale(1.05);
+.categ:hover {
+    transform: scale(1.05); /* Efeito de hover */
 }
 
 .categ img {
-    width: 140px; 
-    height: 90px; 
-    max-height: 100px; 
+    width: 100%; /* A imagem preenche o espaço disponível */
+    max-width: 140px; /* Limita a largura da imagem */
+    height: 90px;
     object-fit: contain;
 }
 
-.subtitulo{
-    font-size: 16px;
+.subtitulo {
+    font-size: 14px; /* Menor fonte para o subtítulo */
     font-weight: bold;
     color: #4491e9;
     margin-top: 5px;

@@ -17,7 +17,8 @@
 }
 
 .sub-mapa{
-    margin-left: 800px;
+    margin-left: 700px;
+    margin-right: 10px;
     position: relative;
-    margin-top:-250px;
+    margin-top:-200px;
 }
